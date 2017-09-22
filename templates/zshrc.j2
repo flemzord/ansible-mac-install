@@ -1,0 +1,10 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/{{ lookup('env','USER') }}/.oh-my-zsh
+
+ZSH_THEME="candy"
+
+HIST_STAMPS="dd/mm/yyyy"
+
+plugins=(battery git brew bower docker github node npm osx pip python sublime vagrant)
+
+source $ZSH/oh-my-zsh.sh

@@ -1,0 +1,32 @@
+---
+- name: Create directory for Project
+  file:
+    path: "{{ project_dir }}/script"
+    state: directory
+
+- name: "SCRIPT | Install upgrade script"
+  copy:
+    src: "files/upgrade.sh"
+    dest: "{{ project_dir }}/script/upgrade.sh"
+    mode: 0755
+
+- name: "SCRIPT | Add in crontab"
+  cron:
+    name: "upgrade"
+    minute: "10"
+    hour: "12"
+    job: "sh {{ project_dir }}/script/upgrade.sh > /dev/null"
+    state: present
+
+- name: "ZSH | Download"
+  git:
+    repo: "git://github.com/robbyrussell/oh-my-zsh.git"
+    dest: "~/.oh-my-zsh"
+
+- name: "ZSH | Copy config"
+  template:
+    src: "templates/zshrc.j2"
+    dest: "~/.zshrc"
+
+- name: "ZSH | Define default shell"
+  command: "chsh -s /bin/zsh"

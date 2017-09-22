@@ -1,0 +1,34 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - config.yml
+
+  pre_tasks:
+    - name: "change security"
+      command: spctl --master-disable
+      become: yes
+
+    - include: tasks/sudoers.yml
+      when: configure_sudoers
+
+  roles:
+    - role: geerlingguy.mas
+      when: mas_installed_apps
+    - role: geerlingguy.homebrew
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+
+  tasks:
+    - include: tasks/ansible-setup.yml
+
+    - include: tasks/osx.yml
+      when: configure_osx
+
+    - include: tasks/extra.yml
+    - include: tasks/docks.yml
+
+    - name: Reboot
+      command: reboot
+      become: yes
