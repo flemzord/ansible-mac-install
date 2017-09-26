@@ -10,7 +10,7 @@
       command: spctl --master-disable
       become: yes
 
-    - include: tasks/sudoers.yml
+    - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
 
   roles:
@@ -21,13 +21,13 @@
       when: configure_dotfiles
 
   tasks:
-    - include: tasks/ansible-setup.yml
+    - import_tasks: tasks/ansible-setup.yml
 
-    - include: tasks/osx.yml
+    - import_tasks: tasks/osx.yml
       when: configure_osx
 
-    - include: tasks/extra.yml
-    - include: tasks/docks.yml
+    - import_tasks: tasks/extra.yml
+    - import_tasks: tasks/docks.yml
 
     - name: Reboot
       command: reboot
