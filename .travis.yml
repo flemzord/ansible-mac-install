@@ -1,0 +1,14 @@
+---
+language: python
+python: "2.7"
+cache: pip
+
+
+install:
+  - pip install ansible
+
+before_script:
+  - ansible-galaxy install -r requirements.yml -p roles
+
+script:
+  - ansible-playbook run.playbook.yml --syntax-check
