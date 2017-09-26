@@ -96,7 +96,7 @@ homebrew_cask_apps:
   - tunnelblick
   - gitkraken
   - intellij-idea
-  - docker
+  - docker-edge
   - vlc
   - istat-menus
 
