@@ -100,6 +100,7 @@ homebrew_cask_apps:
   - docker-edge
   - vlc
   - istat-menus
+  - postman
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
