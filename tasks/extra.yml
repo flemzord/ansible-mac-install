@@ -1,4 +1,7 @@
 ---
+- name: Load git config
+  command: git config --global core.excludesfile ~/.gitignore
+
 - name: Create directory for Project
   file:
     path: "{{ project_dir }}/script"
