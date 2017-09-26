@@ -95,7 +95,7 @@ homebrew_cask_apps:
   - etcher
   - yakyak
   - tunnelblick
-  - gitkraken
+  - gitkrakens
   - intellij-idea
   - docker-edge
   - vlc
@@ -103,6 +103,7 @@ homebrew_cask_apps:
   - postman
 
 # See `geerlingguy.mas` role documentation for usage instructions.
+mas_signin_dialog: yes
 mas_installed_apps:
   - { id: 946399090, name: "Telegram Desktop" }
   - { id: 409183694, name: "Keynote" }
