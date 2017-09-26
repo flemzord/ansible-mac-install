@@ -10,7 +10,7 @@
 - name: "SCRIPT | Install upgrade script"
   copy:
     src: "files/upgrade.sh"
-    dest: "{{ project_dir }}/script/upgrade.sh"
+    dest: "{{ project_dir }}/upgrade.sh"
     mode: 0755
 
 - name: "SCRIPT | Add in crontab"
@@ -18,7 +18,7 @@
     name: "upgrade"
     minute: "10"
     hour: "12"
-    job: "sh {{ project_dir }}/script/upgrade.sh > /dev/null"
+    job: "sh {{ project_dir }}/upgrade.sh > /dev/null"
     state: present
 
 - name: "ZSH | Download"

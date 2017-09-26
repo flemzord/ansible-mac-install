@@ -21,6 +21,6 @@ sudo pip install ansible
 ansible-galaxy install -r requirements.yml -p roles
 
 # launch playbook
-ansible-playbook run.playbook.yml
+ansible-playbook run.playbook.yml --ask-become-pass
 
 cd $CURRENT

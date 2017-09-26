@@ -1,5 +1,5 @@
 ---
-project_dir: ~/Projet
+project_dir: ~/.script
 downloads_dir: ~/Downloads
 
 downloads: ~/.ansible-downloads/
@@ -10,7 +10,7 @@ configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Projet/tmp/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .bash_profile
   - .gitignore
