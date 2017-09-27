@@ -95,7 +95,7 @@ homebrew_cask_apps:
   - etcher
   - yakyak
   - tunnelblick
-  - gitkrakens
+  - gitkraken
   - intellij-idea
   - docker
   - vlc
