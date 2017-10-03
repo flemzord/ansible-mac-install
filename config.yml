@@ -41,7 +41,6 @@ homebrew_installed_packages:
   - yarn
   - nvm
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
   - pv
