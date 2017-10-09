@@ -8,13 +8,13 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
-  - .bash_profile
+  - .zshrc
+  - .gitconfig
   - .gitignore
-  - .inputrc
   - .osx
   - .vimrc
 
@@ -71,12 +71,14 @@ homebrew_installed_packages:
   - tree
   - dockutil
   - watch
+  - zplug
 
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - homebrew/php
+  - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -101,6 +103,10 @@ homebrew_cask_apps:
   - vlc
   - istat-menus
   - postman
+  - font-meslo-nerd-font
+  - font-inconsolata-nerd-font
+  - font-sourcecodepro-nerd-font
+  - font-hack-nerd-font
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
