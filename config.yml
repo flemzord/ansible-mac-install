@@ -7,6 +7,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
+configure_npm: yes
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -106,6 +107,9 @@ homebrew_cask_apps:
   - font-inconsolata-nerd-font
   - font-sourcecodepro-nerd-font
   - font-hack-nerd-font
+
+npm_global_package:
+  - pm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
