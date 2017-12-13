@@ -1,0 +1,11 @@
+---
+- name: Install npm
+  homebrew:
+    name: npm
+    state: present
+
+- name: Install configured npm package.
+  npm:
+    name: "{{ item }}"
+    global: yes
+  with_items: "{{ npm_global_package }}"
