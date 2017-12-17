@@ -26,10 +26,25 @@
     repo: "git://github.com/robbyrussell/oh-my-zsh.git"
     dest: "~/.oh-my-zsh"
 
+- name: "ZSH | Download theme"
+  git:
+    repo: "git://github.com/geometry-zsh/geometry.git"
+    dest: "~/.oh-my-zsh/custom/themes/geometry/"
+
+- name: "ZSH | Download plugins zsh-completions"
+  git:
+    repo: "git://github.com/zsh-users/zsh-completions"
+    dest: "~/.oh-my-zsh/custom/plugins/zsh-completions/"
+
+- name: "ZSH | Download plugins zsh-syntax-highlighting"
+  git:
+    repo: "git://github.com/zsh-users/zsh-syntax-highlighting.git"
+    dest: "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/"
+
 - name: "ZSH | Copy config"
   template:
     src: "templates/zshrc.j2"
     dest: "~/.zshrc"
 
-- name: "ZSH | Define default shell"
-  command: "chsh -s /bin/zsh"
+# - name: "ZSH | Define default shell"
+#   command: "chsh -s /bin/zsh"

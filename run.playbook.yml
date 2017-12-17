@@ -16,13 +16,14 @@
   roles:
     - role: geerlingguy.mas
       when: mas_installed_apps
+
     - role: geerlingguy.homebrew
+      when: homebrew_installed_packages
+
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
 
   tasks:
-    - import_tasks: tasks/ansible-setup.yml
-
     - import_tasks: tasks/osx.yml
       when: configure_osx
 
@@ -30,7 +31,10 @@
       when: configure_npm
 
     - import_tasks: tasks/extra.yml
+      when: configure_extra
+
     - import_tasks: tasks/docks.yml
+      when: configure_dock
 
     - name: Reboot
       command: reboot

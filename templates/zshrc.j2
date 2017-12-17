@@ -1,10 +1,20 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/{{ lookup('env','USER') }}/.oh-my-zsh
 
-ZSH_THEME="candy"
+ZSH_THEME="geometry/geometry"
 
 HIST_STAMPS="dd/mm/yyyy"
 
-plugins=(battery git brew bower docker github node npm osx pip python sublime vagrant)
+plugins=(battery git brew docker github node npm osx pip python zsh-completions zsh-syntax-highlighting)
+
+GEOMETRY_PROMPT_PLUGINS=(virtualenv docker_machine exec_time git)
+GEOMETRY_PROMPT_PREFIX="\n"
+GEOMETRY_PROMPT_SUFFIX="\n"
+GEOMETRY_PROMPT_PREFIX_SPACER=" "
+GEOMETRY_SYMBOL_SPACER=" "
+GEOMETRY_DIR_SPACER=" "
+GEOMETRY_PLUGIN_SEPARATOR=" "
+GEOMETRY_GREP=""
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zshrc.local

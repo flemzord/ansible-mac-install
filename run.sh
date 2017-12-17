@@ -15,7 +15,7 @@ brew update
 sudo easy_install pip
 
 # install ansible
-sudo pip install ansible
+brew install ansible
 
 # get roles
 ansible-galaxy install -r requirements.yml -p roles

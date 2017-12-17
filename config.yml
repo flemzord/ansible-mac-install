@@ -8,6 +8,8 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
 configure_npm: yes
+configure_extra: yes
+configure_dock: yes
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -18,56 +20,32 @@ dotfiles_files:
   - .gitignore
   - .osx
   - .vimrc
+  - .zshrc.local
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
   - autoconf
   - automake
   - bash-completion
   - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - go
   - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
   - node
   - yarn
   - nvm
   - ssh-copy-id
-  - readline
-  - openssl
-  - pv
   - wget
-  - wrk
   - curl
-  - consul
-  - docker-compose
-  - docker-machine-driver-xhyve
-  - docker-machine-nfs
-  - docker-machine
-  - heroku
   - htop
   - kubernetes-cli
   - kubernetes-helm
   - mas
   - ncdu
-  - nmap
   - packer
   - scw
   - terraform
   - terminal-notifier
-  - wget
-  - xhyve
   - zsh
-  - zsh-completions
   - tree
   - dockutil
   - watch
@@ -102,11 +80,7 @@ homebrew_cask_apps:
   - docker
   - vlc
   - istat-menus
-  - postman
-  - font-meslo-nerd-font
-  - font-inconsolata-nerd-font
-  - font-sourcecodepro-nerd-font
-  - font-hack-nerd-font
+  - franz
 
 npm_global_package:
   - pm2
@@ -114,7 +88,7 @@ npm_global_package:
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
 mas_installed_apps:
-  - { id: 946399090, name: "Telegram Desktop" }
+  - { id: 747648890, name: "Telegram" }
   - { id: 409183694, name: "Keynote" }
   - { id: 918858936, name: "Airmail 3" }
   - { id: 409203825, name: "Numbers" }
@@ -122,7 +96,6 @@ mas_installed_apps:
   - { id: 557168941, name: "Tweetbot for Twitter" }
   - { id: 715768417, name: "Microsoft Remote Desktop" }
   - { id: 803453959, name: "Slack" }
-  - { id: 784801555, name: "Microsoft OneNote" }
 
 mas_upgrade_all_apps: yes
 
@@ -173,8 +146,8 @@ dockitems_enabled:
   - name: Tweetbot
     path: "/Applications/Tweetbot.app"
     pos: 7
-  - name: Telegram Desktop
-    path: "/Applications/Telegram Desktop.app"
+  - name: Telegram
+    path: "/Applications/Telegram.app"
     pos: 8
   - name: YakYak
     path: "/Applications/YakYak.app"
@@ -185,8 +158,8 @@ dockitems_enabled:
   - name: Spotify
     path: "/Applications/Spotify.app"
     pos: 11
-  - name: Intellij Idea
-    path: "/Applications/IntelliJ IDEA.app"
+  - name: Atom
+    path: "/Applications/Atom.app"
     pos: 12
   - name: GitKraken
     path: "/Applications/GitKraken.app"
@@ -194,6 +167,9 @@ dockitems_enabled:
   - name: Dash
     path: "/Applications/Dash.app"
     pos: 14
+  - name: Franz
+    path: "/Applications/Franz.app"
+    pos: 15
   - name: Préférences Système
     path: "/Applications/System Preferences.app"
-    pos: 15
+    pos: 16
