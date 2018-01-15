@@ -27,9 +27,11 @@
     dest: "~/.oh-my-zsh"
 
 - name: "ZSH | Download theme"
-  git:
-    repo: "git://github.com/geometry-zsh/geometry.git"
-    dest: "~/.oh-my-zsh/custom/themes/geometry/"
+  get_url: https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh
+    dest: "/tmp/spaceship/"
+
+- name: "ZSH | Install theme"
+  script: /tmp/spaceship/install.zsh
 
 - name: "ZSH | Download plugins zsh-completions"
   git:

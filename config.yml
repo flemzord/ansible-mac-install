@@ -11,15 +11,14 @@ configure_npm: yes
 configure_extra: yes
 configure_dock: yes
 
-dotfiles_repo: https://github.com/flemzord/dotfiles.git
+dotfiles_repo: https://github.com/Jno21/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .zshrc
   - .gitconfig
   - .gitignore
-  - .osx
-  - .vimrc
+  - .macos
   - .zshrc.local
 
 homebrew_installed_packages:
@@ -42,9 +41,7 @@ homebrew_installed_packages:
   - mas
   - ncdu
   - packer
-  - scw
   - terraform
-  - terminal-notifier
   - zsh
   - tree
   - dockutil
@@ -61,6 +58,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
+  - firefox
   - sequel-pro
   - google-cloud-sdk
   - google-backup-and-sync
@@ -73,14 +71,16 @@ homebrew_cask_apps:
   - dash
   - cleanmymac
   - etcher
-  - yakyak
   - tunnelblick
   - gitkraken
-  - intellij-idea
   - docker
   - vlc
   - istat-menus
   - franz
+  - dashlane
+  - postman
+  - polymail
+  - emacs
 
 npm_global_package:
   - pm2
@@ -88,18 +88,14 @@ npm_global_package:
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
 mas_installed_apps:
-  - { id: 747648890, name: "Telegram" }
   - { id: 409183694, name: "Keynote" }
-  - { id: 918858936, name: "Airmail 3" }
   - { id: 409203825, name: "Numbers" }
   - { id: 409201541, name: "Pages" }
-  - { id: 557168941, name: "Tweetbot for Twitter" }
-  - { id: 715768417, name: "Microsoft Remote Desktop" }
   - { id: 803453959, name: "Slack" }
 
 mas_upgrade_all_apps: yes
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.macos --no-restart"
 
 dockitems_disabled:
   - Launchpad
@@ -107,11 +103,9 @@ dockitems_disabled:
   - Mail
   - Safari
   - Contacts
-  - Notes
   - Rappels
   - Maps
   - Photos
-  - Messages
   - FaceTime
   - iTunes
   - iBooks
@@ -122,11 +116,10 @@ dockitems_disabled:
   - Pages
   - Numbers
   - Keynote
-  - Préférences Système
 
 dockitems_enabled:
-  - name: Airmail 3
-    path: "/Applications/Airmail 3.app"
+  - name: Polymail
+    path: "/Applications/Polymail.app"
     pos: 1
   - name: iTerm
     path: "/Applications/iTerm.app"
@@ -143,15 +136,6 @@ dockitems_enabled:
   - name: Keynote
     path: "/Applications/Keynote.app"
     pos: 6
-  - name: Tweetbot
-    path: "/Applications/Tweetbot.app"
-    pos: 7
-  - name: Telegram
-    path: "/Applications/Telegram.app"
-    pos: 8
-  - name: YakYak
-    path: "/Applications/YakYak.app"
-    pos: 9
   - name: Slack
     path: "/Applications/Slack.app"
     pos: 10
