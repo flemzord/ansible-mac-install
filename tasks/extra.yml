@@ -26,12 +26,12 @@
     repo: "git://github.com/robbyrussell/oh-my-zsh.git"
     dest: "~/.oh-my-zsh"
 
-- name: "ZSH | Download theme"
-  get_url: https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh
-    dest: "/tmp/spaceship/"
+#- name: "ZSH | Download theme"
+#  get_url: https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh
+#    dest: "/tmp/spaceship/"
 
-- name: "ZSH | Install theme"
-  script: /tmp/spaceship/install.zsh
+#- name: "ZSH | Install theme"
+#  script: /tmp/spaceship/install.zsh
 
 - name: "ZSH | Download plugins zsh-completions"
   git:
@@ -48,5 +48,5 @@
     src: "templates/zshrc.j2"
     dest: "~/.zshrc"
 
-# - name: "ZSH | Define default shell"
-#   command: "chsh -s /bin/zsh"
+- name: "ZSH | Define default shell"
+  command: "chsh -s /bin/zsh"
