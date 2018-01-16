@@ -84,6 +84,7 @@ homebrew_cask_apps:
 
 npm_global_package:
   - pm2
+  - spaceship-zsh-theme
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
