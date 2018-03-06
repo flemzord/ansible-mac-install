@@ -46,5 +46,5 @@
     src: "templates/zshrc.j2"
     dest: "~/.zshrc"
 
-# - name: "ZSH | Define default shell"
-#   command: "chsh -s /bin/zsh"
+- name: "ZSH | Define default shell"
+  command: "chsh -s /bin/zsh"
