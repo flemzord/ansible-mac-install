@@ -76,6 +76,7 @@ homebrew_cask_apps:
   - istat-menus
   - franz
   - visual-studio-code
+  - dashlane
 
 npm_global_package:
   - pm2
