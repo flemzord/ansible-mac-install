@@ -26,7 +26,6 @@ homebrew_installed_packages:
   - autoconf
   - automake
   - bash-completion
-  - chromedriver
   - git
   - go
   - gpg
@@ -48,24 +47,22 @@ homebrew_installed_packages:
   - watch
   - zplug
 
-homebrew_taps:
-  - homebrew/core
-  - caskroom/cask
-  - homebrew/php
-  - caskroom/fonts
+##homebrew_taps:
+#  - homebrew/core
+#  - caskroom/cask
+#  - homebrew/php
+#  - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
   - sequel-pro
   - google-cloud-sdk
-  - google-backup-and-sync
+  - font-fira-mono-for-powerline
+  - google-drive-file-stream
   - alfred
   - iterm2
   - spotify
-  - vagrant
-  - virtualbox
-  - dash
   - cleanmymac
   - etcher
   - yakyak
@@ -73,10 +70,11 @@ homebrew_cask_apps:
   - gitkraken
   - docker-edge
   - vlc
-  - istat-menus
   - franz
   - visual-studio-code
   - dashlane
+  - font-fira-mono-for-powerline
+  - homebrew/cask-versions/docker-edge
 
 npm_global_package:
   - pm2

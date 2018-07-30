@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/{{ lookup('env','USER') }}/.oh-my-zsh
+export ZSH=/Users/maxence.m/.oh-my-zsh
 
-ZSH_THEME="spaceship-prompt/spaceship.zsh"
+ZSH_THEME="../custom/themes/spaceship-prompt/spaceship"
 
 HIST_STAMPS="dd/mm/yyyy"
 
@@ -21,4 +21,4 @@ source ~/.zshrc.local
 
 # Config for NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+. "/usr/local/opt/nvm/nvm.sh"
