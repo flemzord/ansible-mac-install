@@ -4,6 +4,8 @@
     name: npm
     state: present
 
+
+
 - name: Install configured npm package.
   npm:
     name: "{{ item }}"

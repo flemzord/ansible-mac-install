@@ -28,8 +28,8 @@
 
 - name: "ZSH | Download theme"
   git:
-    repo: "git://github.com/geometry-zsh/geometry.git"
-    dest: "~/.oh-my-zsh/custom/themes/geometry/"
+    repo: "https://github.com/denysdovhan/spaceship-prompt.git"
+    dest: "~/.oh-my-zsh/custom/themes/spaceship-prompt/"
 
 - name: "ZSH | Download plugins zsh-completions"
   git:

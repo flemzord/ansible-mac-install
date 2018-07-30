@@ -7,7 +7,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
-configure_npm: yes
+configure_npm: no
 configure_extra: yes
 configure_dock: yes
 
@@ -30,8 +30,6 @@ homebrew_installed_packages:
   - git
   - go
   - gpg
-  - node
-  - yarn
   - nvm
   - ssh-copy-id
   - wget
@@ -44,13 +42,11 @@ homebrew_installed_packages:
   - packer
   - scw
   - terraform
-  - terminal-notifier
   - zsh
   - tree
   - dockutil
   - watch
   - zplug
-
 
 homebrew_taps:
   - homebrew/core
@@ -64,7 +60,6 @@ homebrew_cask_apps:
   - sequel-pro
   - google-cloud-sdk
   - google-backup-and-sync
-  - atom
   - alfred
   - iterm2
   - spotify
@@ -76,11 +71,11 @@ homebrew_cask_apps:
   - yakyak
   - tunnelblick
   - gitkraken
-  - intellij-idea
-  - docker
+  - docker-edge
   - vlc
   - istat-menus
   - franz
+  - visual-studio-code
 
 npm_global_package:
   - pm2
@@ -90,12 +85,10 @@ mas_signin_dialog: yes
 mas_installed_apps:
   - { id: 747648890, name: "Telegram" }
   - { id: 409183694, name: "Keynote" }
-  - { id: 918858936, name: "Airmail 3" }
   - { id: 409203825, name: "Numbers" }
   - { id: 409201541, name: "Pages" }
   - { id: 557168941, name: "Tweetbot for Twitter" }
   - { id: 715768417, name: "Microsoft Remote Desktop" }
-  - { id: 803453959, name: "Slack" }
 
 mas_upgrade_all_apps: yes
 
@@ -125,51 +118,27 @@ dockitems_disabled:
   - Préférences Système
 
 dockitems_enabled:
-  - name: Airmail 3
-    path: "/Applications/Airmail 3.app"
-    pos: 1
   - name: iTerm
     path: "/Applications/iTerm.app"
-    pos: 2
+    pos: 1
   - name: Google Chrome
     path: "/Applications/Google Chrome.app"
-    pos: 3
-  - name: Pages
-    path: "/Applications/Pages.app"
-    pos: 4
-  - name: Numbers
-    path: "/Applications/Numbers.app"
-    pos: 5
-  - name: Keynote
-    path: "/Applications/Keynote.app"
-    pos: 6
+    pos: 2
   - name: Tweetbot
     path: "/Applications/Tweetbot.app"
-    pos: 7
+    pos: 3
   - name: Telegram
     path: "/Applications/Telegram.app"
-    pos: 8
+    pos: 4
   - name: YakYak
     path: "/Applications/YakYak.app"
-    pos: 9
-  - name: Slack
-    path: "/Applications/Slack.app"
-    pos: 10
-  - name: Spotify
-    path: "/Applications/Spotify.app"
-    pos: 11
-  - name: Atom
-    path: "/Applications/Atom.app"
-    pos: 12
-  - name: GitKraken
-    path: "/Applications/GitKraken.app"
-    pos: 13
-  - name: Dash
-    path: "/Applications/Dash.app"
-    pos: 14
+    pos: 5
   - name: Franz
     path: "/Applications/Franz.app"
-    pos: 15
+    pos: 6
+  - name: Spotify
+    path: "/Applications/Spotify.app"
+    pos: 7
   - name: Préférences Système
     path: "/Applications/System Preferences.app"
-    pos: 16
+    pos: 8
