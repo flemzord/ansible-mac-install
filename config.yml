@@ -88,6 +88,7 @@ mas_installed_apps:
   - { id: 409201541, name: "Pages" }
   - { id: 557168941, name: "Tweetbot for Twitter" }
   - { id: 715768417, name: "Microsoft Remote Desktop" }
+  - { id: 784801555, name: "Microsoft OneNote" }
 
 mas_upgrade_all_apps: yes
 
