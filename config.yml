@@ -1,5 +1,5 @@
 ---
-project_dir: ~/.script
+project_dir: ~/Project
 downloads_dir: ~/Downloads
 
 downloads: ~/.ansible-downloads/
@@ -10,6 +10,7 @@ configure_osx: yes
 configure_npm: no
 configure_extra: yes
 configure_dock: yes
+install_homestead: yes
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -47,7 +48,7 @@ homebrew_installed_packages:
   - watch
   - zplug
 
-##homebrew_taps:
+#homebrew_taps:
 #  - homebrew/core
 #  - caskroom/cask
 #  - homebrew/php

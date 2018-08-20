@@ -2,25 +2,6 @@
 - name: Load git config
   command: git config --global core.excludesfile ~/.gitignore
 
-- name: Create directory for Project
-  file:
-    path: "{{ project_dir }}/script"
-    state: directory
-
-- name: "SCRIPT | Install upgrade script"
-  copy:
-    src: "files/upgrade.sh"
-    dest: "{{ project_dir }}/upgrade.sh"
-    mode: 0755
-
-- name: "SCRIPT | Add in crontab"
-  cron:
-    name: "upgrade"
-    minute: "10"
-    hour: "12"
-    job: "sh {{ project_dir }}/upgrade.sh > /dev/null"
-    state: present
-
 - name: "ZSH | Download"
   git:
     repo: "git://github.com/robbyrussell/oh-my-zsh.git"
@@ -40,6 +21,12 @@
   git:
     repo: "git://github.com/zsh-users/zsh-syntax-highlighting.git"
     dest: "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/"
+
+- name: "ZSH | Download plugins zsh-homestead"
+  git:
+    repo: "https://github.com/flemzord/zsh-homestead.git"
+    dest: "~/.oh-my-zsh/custom/plugins/zsh-homestead/"
+
 
 - name: "ZSH | Copy config"
   template:

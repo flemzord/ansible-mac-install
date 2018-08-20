@@ -36,6 +36,9 @@
     - import_tasks: tasks/docks.yml
       when: configure_dock
 
+    - import_tasks: tasks/homestead.yml
+      when: install_homestead
+
     - name: Reboot
       command: reboot
       become: yes

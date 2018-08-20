@@ -1,0 +1,20 @@
+---
+- name: Create project dir
+  file:
+    state: directory
+    path: "{{ project_dir }}"
+
+- name: "Download Homestead"
+  git:
+    repo: "https://github.com/laravel/homestead.git"
+    dest: "{{ project_dir }}/homestead/"
+
+- name: "Add config for homestead"
+  template:
+    src: "templates/homestead.yaml.j2" 
+    dest: "{{ project_dir }}/homestead/homestead.yaml"
+
+- name: "Create homestead vm"
+  command: "vagrant up"
+  args:
+    chdir: "{{ project_dir }}/homestead/"
