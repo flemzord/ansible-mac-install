@@ -33,6 +33,12 @@
     - import_tasks: tasks/extra.yml
       when: configure_extra
 
+    - import_tasks: tasks/zsh.yml
+      when: configure_zsh
+
+    - import_tasks: tasks/fish.yml
+      when: configure_fish
+
     - import_tasks: tasks/docks.yml
       when: configure_dock
 

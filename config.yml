@@ -11,6 +11,8 @@ configure_npm: no
 configure_extra: yes
 configure_dock: yes
 install_homestead: yes
+configure_zsh: no
+configure_fish: yes
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -47,6 +49,8 @@ homebrew_installed_packages:
   - dockutil
   - watch
   - zplug
+  - fish
+  - fzf
 
 #homebrew_taps:
 #  - homebrew/core

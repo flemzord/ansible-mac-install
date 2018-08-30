@@ -18,3 +18,9 @@
   command: "vagrant up"
   args:
     chdir: "{{ project_dir }}/homestead/"
+
+- name: "Add config for FISH"
+  template:
+    src: "function.homestead.fish.j2"
+    dest: "~/.config/fish/functions/homestead.fish"
+  when: configure_fish

@@ -1,0 +1,6 @@
+function homestead
+        set DIR $PWD
+        cd {{ project_dir }}/homestead/
+        eval vagrant $argv
+        cd $DIR
+end
