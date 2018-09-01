@@ -61,17 +61,15 @@ homebrew_installed_packages:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
+  - opera
   - sequel-pro
   - google-cloud-sdk
-  - font-fira-mono-for-powerline
   - google-drive-file-stream
   - alfred
   - iterm2
   - spotify
-  - cleanmymac
   - etcher
   - yakyak
-  - tunnelblick
   - gitkraken
   - docker-edge
   - vlc
@@ -79,7 +77,6 @@ homebrew_cask_apps:
   - visual-studio-code
   - dashlane
   - font-fira-mono-for-powerline
-  - homebrew/cask-versions/docker-edge
 
 npm_global_package:
   - pm2
