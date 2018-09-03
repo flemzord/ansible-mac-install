@@ -12,7 +12,7 @@ configure_extra: yes
 configure_dock: yes
 install_homestead: yes
 configure_zsh: no
-configure_fish: yes
+configure_fish: no
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -78,8 +78,8 @@ homebrew_cask_apps:
   - dashlane
   - font-fira-mono-for-powerline
 
-npm_global_package:
-  - pm2
+# npm_global_package:
+#   - pm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
@@ -123,8 +123,8 @@ dockitems_enabled:
   - name: iTerm
     path: "/Applications/iTerm.app"
     pos: 1
-  - name: Google Chrome
-    path: "/Applications/Google Chrome.app"
+  - name: Opera
+    path: "/Applications/Opera.app"
     pos: 2
   - name: Tweetbot
     path: "/Applications/Tweetbot.app"
@@ -132,9 +132,6 @@ dockitems_enabled:
   - name: Telegram
     path: "/Applications/Telegram.app"
     pos: 4
-  - name: YakYak
-    path: "/Applications/YakYak.app"
-    pos: 5
   - name: Franz
     path: "/Applications/Franz.app"
     pos: 6
