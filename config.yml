@@ -67,6 +67,7 @@ homebrew_cask_apps:
   - lens
   - virtualbox
   - vagrant
+  - deepl
 
 # npm_global_package:
 #   - pm2
