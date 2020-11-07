@@ -10,9 +10,7 @@ configure_osx: yes
 configure_npm: no
 configure_extra: yes
 configure_dock: yes
-install_homestead: yes
-configure_zsh: no
-configure_fish: no
+configure_zsh: yes
 
 dotfiles_repo: https://github.com/flemzord/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -49,8 +47,8 @@ homebrew_installed_packages:
   - dockutil
   - watch
   - zplug
-  - fish
   - fzf
+  - awscli
 
 #homebrew_taps:
 #  - homebrew/core
@@ -61,22 +59,14 @@ homebrew_installed_packages:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
-  - opera
-  - sequel-pro
-  - google-cloud-sdk
-  - google-drive-file-stream
-  - alfred
   - iterm2
-  - spotify
-  - etcher
-  - yakyak
-  - gitkraken
-  - docker-edge
   - vlc
-  - franz
   - visual-studio-code
-  - dashlane
-  - font-fira-mono-for-powerline
+  - linear-linear
+  - jetbrains-toolbox
+  - lens
+  - virtualbox
+  - vagrant
 
 # npm_global_package:
 #   - pm2
@@ -89,8 +79,15 @@ mas_installed_apps:
   - { id: 409203825, name: "Numbers" }
   - { id: 409201541, name: "Pages" }
   - { id: 557168941, name: "Tweetbot for Twitter" }
-  - { id: 715768417, name: "Microsoft Remote Desktop" }
   - { id: 784801555, name: "Microsoft OneNote" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 462062816, name: "Microsoft Powerpoint" }
+  - { id: 985367838, name: "Microsoft Outlook" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 1176895641, name: "Spark – Email App by Readdle" }
+  - { id: 1333542190, name: "1Password 7 - Password Manager" }
+
 
 mas_upgrade_all_apps: yes
 
@@ -123,21 +120,9 @@ dockitems_enabled:
   - name: iTerm
     path: "/Applications/iTerm.app"
     pos: 1
-  - name: Opera
-    path: "/Applications/Opera.app"
-    pos: 2
   - name: Tweetbot
     path: "/Applications/Tweetbot.app"
     pos: 3
   - name: Telegram
     path: "/Applications/Telegram.app"
     pos: 4
-  - name: Franz
-    path: "/Applications/Franz.app"
-    pos: 6
-  - name: Spotify
-    path: "/Applications/Spotify.app"
-    pos: 7
-  - name: Préférences Système
-    path: "/Applications/System Preferences.app"
-    pos: 8

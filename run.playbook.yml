@@ -36,14 +36,8 @@
     - import_tasks: tasks/zsh.yml
       when: configure_zsh
 
-    - import_tasks: tasks/fish.yml
-      when: configure_fish
-
     - import_tasks: tasks/docks.yml
       when: configure_dock
-
-    - import_tasks: tasks/homestead.yml
-      when: install_homestead
 
     - name: Reboot
       command: reboot
