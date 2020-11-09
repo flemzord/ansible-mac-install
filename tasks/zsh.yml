@@ -5,8 +5,8 @@
 
 - name: "ZSH | Download theme"
   git:
-    repo: "https://github.com/denysdovhan/spaceship-prompt.git"
-    dest: "~/.oh-my-zsh/custom/themes/spaceship-prompt/"
+    repo: "https://github.com/sindresorhus/pure.git"
+    dest: "~/.zsh/pure/"
 
 - name: "ZSH | Download plugins zsh-completions"
   git:
@@ -22,12 +22,6 @@
   git:
     repo: "https://github.com/flemzord/zsh-homestead.git"
     dest: "~/.oh-my-zsh/custom/plugins/zsh-homestead/"
-
-
-- name: "ZSH | Copy config"
-  template:
-    src: "templates/zshrc.j2"
-    dest: "~/.zshrc"
 
 - name: "ZSH | Define default shell"
   command: "chsh -s /bin/zsh"

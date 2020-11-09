@@ -7,7 +7,6 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
-configure_npm: no
 configure_extra: yes
 configure_dock: yes
 configure_zsh: yes
@@ -49,10 +48,18 @@ homebrew_installed_packages:
   - zplug
   - fzf
   - awscli
+  - httpie
+  - jq
+  - terminal-notifier
+  - vim
+  - wget
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
+  - brave-browser
+  - firefox
+  - discord
   - iterm2
   - vlc
   - visual-studio-code
@@ -66,6 +73,12 @@ homebrew_cask_apps:
   - bluejeans
   - zoomus
   - whatsapp
+  - font-jetbrains-mono
+  - font-source-code-pro
+  - grammarly
+  - postman
+  - transmission
+  - transmit
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
@@ -80,6 +93,7 @@ mas_installed_apps:
   - { id: 462058435, name: "Microsoft Excel" }
   - { id: 462062816, name: "Microsoft Powerpoint" }
   - { id: 985367838, name: "Microsoft Outlook" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" } # RDP Client
   - { id: 803453959, name: "Slack" }
   - { id: 1176895641, name: "Spark – Email App by Readdle" }
   - { id: 1333542190, name: "1Password 7 - Password Manager" }

@@ -10,10 +10,6 @@ terminal-notifier -message "Brew | doctor"
 brew doctor
 terminal-notifier -message "Brew | missing"
 brew missing
-terminal-notifier -message "ATOM | Update Package"
-apm-beta upgrade -c false
-terminal-notifier -message "MarketPlace | Update all"
+terminal-notifier -message "AppleStore | Update all"
 mas outdated
 mas upgrade
-terminal-notifier -message "NPM | Upgrade"
-npm update -g

@@ -27,9 +27,6 @@
     - import_tasks: tasks/osx.yml
       when: configure_osx
 
-    - import_tasks: tasks/npm.yml
-      when: configure_npm
-
     - import_tasks: tasks/extra.yml
       when: configure_extra
 
