@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - vagrant
   - deepl
   - messenger
+  - bluejeans
 
 # npm_global_package:
 #   - pm2
