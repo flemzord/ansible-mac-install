@@ -50,12 +50,6 @@ homebrew_installed_packages:
   - fzf
   - awscli
 
-#homebrew_taps:
-#  - homebrew/core
-#  - caskroom/cask
-#  - homebrew/php
-#  - caskroom/fonts
-
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
@@ -70,9 +64,8 @@ homebrew_cask_apps:
   - deepl
   - messenger
   - bluejeans
-
-# npm_global_package:
-#   - pm2
+  - zoomus
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
