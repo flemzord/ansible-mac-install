@@ -22,6 +22,14 @@ dotfiles_files:
   - .vimrc
   - .zshrc.local
 
+homebrew_taps:
+  - homebrew/cask
+  - wallix/awless
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
+  - aws/tap
+  - lucagrulla/tap
+
 homebrew_installed_packages:
   - autoconf
   - automake
