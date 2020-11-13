@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - terminal-notifier
   - vim
   - wget
+  - glances
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
