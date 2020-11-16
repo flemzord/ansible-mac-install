@@ -30,12 +30,12 @@
     - import_tasks: tasks/extra.yml
       when: configure_extra
 
-    - import_tasks: tasks/zsh.yml
-      when: configure_zsh
+    #- import_tasks: tasks/zsh.yml
+    #  when: configure_zsh
 
-    - import_tasks: tasks/docks.yml
-      when: configure_dock
+    #- import_tasks: tasks/docks.yml
+    #  when: configure_dock
 
-    - name: Reboot
-      command: reboot
-      become: yes
+    #- name: Reboot
+    #  command: reboot
+    #  become: yes
