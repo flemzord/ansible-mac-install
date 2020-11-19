@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - vim
   - wget
   - glances
+  - krew
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -105,7 +106,7 @@ mas_installed_apps:
   - { id: 803453959, name: "Slack" }
   - { id: 1176895641, name: "Spark – Email App by Readdle" }
   - { id: 1333542190, name: "1Password 7 - Password Manager" }
-
+  - { id: 1475387142, name: "Tailscale" }
 
 mas_upgrade_all_apps: yes
 
