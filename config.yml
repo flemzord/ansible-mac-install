@@ -88,6 +88,7 @@ homebrew_cask_apps:
   - postman
   - transmission
   - transmit
+  - pocket-casts
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
@@ -107,6 +108,7 @@ mas_installed_apps:
   - { id: 1176895641, name: "Spark – Email App by Readdle" }
   - { id: 1333542190, name: "1Password 7 - Password Manager" }
   - { id: 1475387142, name: "Tailscale" }
+  - { id: 1284863847, name: "Unsplash Wallpapers" }
 
 mas_upgrade_all_apps: yes
 
