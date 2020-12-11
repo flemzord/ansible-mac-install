@@ -62,6 +62,7 @@ homebrew_installed_packages:
   - wget
   - glances
   - krew
+  - rain
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
