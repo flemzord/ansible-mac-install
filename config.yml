@@ -30,14 +30,9 @@ homebrew_taps:
   - lucagrulla/tap
 
 homebrew_installed_packages:
-  - autoconf
-  - automake
   - bash-completion
   - git
-  - go
-  - gpg
   - nvm
-  - ssh-copy-id
   - wget
   - curl
   - htop
@@ -46,7 +41,6 @@ homebrew_installed_packages:
   - mas
   - ncdu
   - packer
-  - scw
   - terraform
   - zsh
   - tree
@@ -61,9 +55,7 @@ homebrew_installed_packages:
   - vim
   - wget
   - glances
-  - krew
-  - rain
-
+  
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
@@ -92,16 +84,13 @@ mas_installed_apps:
   - { id: 409203825, name: "Numbers" }
   - { id: 409201541, name: "Pages" }
   - { id: 557168941, name: "Tweetbot for Twitter" }
-  - { id: 784801555, name: "Microsoft OneNote" }
   - { id: 462054704, name: "Microsoft Word" }
   - { id: 462058435, name: "Microsoft Excel" }
   - { id: 462062816, name: "Microsoft Powerpoint" }
   - { id: 985367838, name: "Microsoft Outlook" }
-  - { id: 1295203466, name: "Microsoft Remote Desktop" } # RDP Client
   - { id: 803453959, name: "Slack" }
   - { id: 1176895641, name: "Spark – Email App by Readdle" }
   - { id: 1333542190, name: "1Password 7 - Password Manager" }
-  - { id: 1475387142, name: "Tailscale" }
   - { id: 1284863847, name: "Unsplash Wallpapers" }
 
 mas_upgrade_all_apps: yes
